@@ -9,6 +9,7 @@ drums.forEach((drum) => {
 
 document.body.addEventListener("keydown", (e) => {
   playAudio(e.key);
+  animate(document.querySelector(`.${e.key}`));
 });
 
 function playAudio(id) {
